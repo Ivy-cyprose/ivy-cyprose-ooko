@@ -170,7 +170,17 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+// ...existing code...
 
+    // FAQ Toggle Functionality
+    document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const item = this.parentElement;
+            item.classList.toggle('active');
+        });
+    });
+
+// ...existing code...
     // Newsletter Form Submission
     const newsletterForm = document.querySelector('.newsletter-form');
     
@@ -186,4 +196,19 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('Thank you for subscribing to our newsletter!');
         emailInput.value = '';
     });
+    // ...existing code...
+
+// Contact Form Submission Response
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const responseDiv = this.querySelector('.contact-response');
+        responseDiv.textContent = "Thank you for reaching out! We have received your message and will get back to you soon.";
+        responseDiv.style.display = "block";
+        this.reset();
+    });
+}
+
+// ...existing code...
 });

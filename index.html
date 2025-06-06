@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Flavors - Food & Culture Exploration</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -47,10 +47,97 @@
             <p>Explore culinary traditions from around the world</p>
         </div>
         <div class="cuisine-grid">
-            <!-- Cards will be populated by JavaScript -->
+    <div class="cuisine-card">
+        <div class="cuisine-img">
+            <img src="https://images.unsplash.com/photo-1533777324565-a040eb52facd" alt="Italian Cuisine">
         </div>
+        <div class="cuisine-info">
+            <h3>Italian Cuisine</h3>
+            <p>Discover the rich flavors of Italy, from pasta to risotto and beyond.</p>
+            <span class="cuisine-region">Europe</span>
+        </div>
+    </div>
+    <div class="cuisine-card">
+        <div class="cuisine-img">
+            <img src="https://images.unsplash.com/photo-1490641815614-b45106d6dd04" alt="Japanese Cuisine">
+        </div>
+        <div class="cuisine-info">
+            <h3>Japanese Cuisine</h3>
+            <p>Experience the delicate balance of flavors in traditional Japanese dishes.</p>
+            <span class="cuisine-region">Asia</span>
+        </div>
+    </div>
+    <div class="cuisine-card">
+        <div class="cuisine-img">
+            <img src="https://images.unsplash.com/photo-1513456852971-30c0b8199d4d" alt="Mexican Cuisine">
+        </div>
+        <div class="cuisine-info">
+            <h3>Mexican Cuisine</h3>
+            <p>Spicy, colorful and full of flavor - explore authentic Mexican food.</p>
+            <span class="cuisine-region">North America</span>
+        </div>
+    </div>
+    <div class="cuisine-card">
+        <div class="cuisine-img">
+            <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe" alt="Indian Cuisine">
+        </div>
+        <div class="cuisine-info">
+            <h3>Indian Cuisine</h3>
+            <p>Aromatic spices and diverse regional specialties await you.</p>
+            <span class="cuisine-region">Asia</span>
+        </div>
+    </div>
+    <div class="cuisine-card">
+        <div class="cuisine-img">
+            <img src="https://images.unsplash.com/photo-1517638851339-a711cfcf3279" alt="Moroccan Cuisine">
+        </div>
+        <div class="cuisine-info">
+            <h3>Moroccan Cuisine</h3>
+            <p>A blend of Mediterranean, Arabic, and Andalusian flavors.</p>
+            <span class="cuisine-region">Africa</span>
+        </div>
+    </div>
+    <div class="cuisine-card">
+        <div class="cuisine-img">
+            <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b" alt="Brazilian Cuisine">
+        </div>
+        <div class="cuisine-info">
+            <h3>Brazilian Cuisine</h3>
+            <p>From feijoada to churrasco, explore Brazil's culinary diversity.</p>
+            <span class="cuisine-region">South America</span>
+        </div>
+    </div>
+</div>
     </section>
-
+<!-- Services Offered Section -->
+<section class="services" id="services">
+    <div class="section-title">
+        <h2>Our Services</h2>
+        <p>Discover how we connect food and culture through our unique offerings</p>
+    </div>
+    <div class="services-grid">
+        <div class="service-card">
+            <i class="fas fa-utensils"></i>
+            <h3>Culinary Workshops</h3>
+            <p>Hands-on cooking classes featuring traditional recipes from around the world, led by expert chefs.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-globe"></i>
+            <h3>Cultural Food Tours</h3>
+            <p>Guided tours exploring local markets, street food, and authentic dining experiences in various cultures.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <h3>Educational Seminars</h3>
+            <p>Interactive talks and seminars on the history, symbolism, and rituals of food in different societies.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-seedling"></i>
+            <h3>Farm-to-Table Events</h3>
+            <p>Special events highlighting sustainable practices and the journey of food from farm to plate.</p>
+        </div>
+    </div>
+</section>
     <!-- Cultural Traditions Section -->
     <section class="traditions" id="traditions">
         <div class="section-title">
@@ -74,18 +161,76 @@
 
     <!-- Recipe Spotlight Section -->
     <section class="recipes" id="recipes">
-        <div class="section-title">
-            <h2>Recipe Spotlight</h2>
-            <p>Try making these authentic dishes at home</p>
-        </div>
-        <div class="recipe-carousel">
-            <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
-            <div class="recipe-slides">
-                <!-- Slides will be populated by JavaScript -->
+    <div class="section-title">
+        <h2>Recipe Spotlight</h2>
+        <p>Try making these authentic dishes at home</p>
+    </div>
+    <div class="recipe-carousel">
+        <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <div class="recipe-slides">
+            <!-- Recipe 1 -->
+            <div class="recipe-card">
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Spaghetti Carbonara">
+                <div class="recipe-info">
+                    <h3>Spaghetti Carbonara</h3>
+                    <p class="cook-time"><i class="fas fa-clock"></i> 25 mins</p>
+                    <p class="difficulty"><i class="fas fa-signal"></i> Intermediate</p>
+                    <p class="description">Classic Roman pasta with eggs, cheese, pancetta, and black pepper.</p>
+                    <a href="#" class="recipe-btn">View Recipe</a>
+                </div>
             </div>
-            <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            
+            <!-- Recipe 2 -->
+            <div class="recipe-card">
+                <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f" alt="Chicken Tikka Masala">
+                <div class="recipe-info">
+                    <h3>Chicken Tikka Masala</h3>
+                    <p class="cook-time"><i class="fas fa-clock"></i> 50 mins</p>
+                    <p class="difficulty"><i class="fas fa-signal"></i> Intermediate</p>
+                    <p class="description">Creamy, spiced Indian curry with grilled chicken pieces.</p>
+                    <a href="#" class="recipe-btn">View Recipe</a>
+                </div>
+            </div>
+            
+            <!-- Recipe 3 -->
+            <div class="recipe-card">
+                <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641" alt="Beef Pho">
+                <div class="recipe-info">
+                    <h3>Beef Pho</h3>
+                    <p class="cook-time"><i class="fas fa-clock"></i> 3 hrs 30 mins</p>
+                    <p class="difficulty"><i class="fas fa-signal"></i> Advanced</p>
+                    <p class="description">Vietnamese noodle soup with aromatic broth and tender beef.</p>
+                    <a href="#" class="recipe-btn">View Recipe</a>
+                </div>
+            </div>
+            
+            <!-- Recipe 4 -->
+            <div class="recipe-card">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" alt="Margherita Pizza">
+                <div class="recipe-info">
+                    <h3>Margherita Pizza</h3>
+                    <p class="cook-time"><i class="fas fa-clock"></i> 1 hr 15 mins</p>
+                    <p class="difficulty"><i class="fas fa-signal"></i> Beginner</p>
+                    <p class="description">Classic Neapolitan pizza with tomato, mozzarella, and basil.</p>
+                    <a href="#" class="recipe-btn">View Recipe</a>
+                </div>
+            </div>
+            
+            <!-- Recipe 5 -->
+            <div class="recipe-card">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947" alt="Chocolate Soufflé">
+                <div class="recipe-info">
+                    <h3>Chocolate Soufflé</h3>
+                    <p class="cook-time"><i class="fas fa-clock"></i> 45 mins</p>
+                    <p class="difficulty"><i class="fas fa-signal"></i> Advanced</p>
+                    <p class="description">Light, airy French dessert with rich chocolate flavor.</p>
+                    <a href="#" class="recipe-btn">View Recipe</a>
+                </div>
+            </div>
         </div>
-    </section>
+        <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+</section>
 
     <!-- Newsletter Section -->
     <section class="newsletter">
@@ -98,7 +243,77 @@
             </form>
         </div>
     </section>
-
+    <!-- Testimonial Section -->
+<section class="testimonials" id="testimonials">
+    <div class="section-title">
+        <h2>What People Say</h2>
+        <p>Real experiences from our food and culture community</p>
+    </div>
+    <div class="testimonial-list">
+        <div class="testimonial-item">
+            <p class="testimonial-text">"Attending the culinary workshop opened my eyes to new flavors and traditions. Highly recommended!"</p>
+            <div class="testimonial-author">— Maria G., Italy</div>
+        </div>
+        <div class="testimonial-item">
+            <p class="testimonial-text">"The cultural food tour was an unforgettable journey through local markets and authentic dishes."</p>
+            <div class="testimonial-author">— Kenji S., Japan</div>
+        </div>
+        <div class="testimonial-item">
+            <p class="testimonial-text">"I loved learning about the history behind each recipe. It made cooking so much more meaningful."</p>
+            <div class="testimonial-author">— Amina T., Morocco</div>
+        </div>
+    </div>
+</section>
+<!-- FAQ Section -->
+<section class="faq" id="faq">
+    <div class="section-title">
+        <h2>Frequently Asked Questions</h2>
+        <p>Answers to common questions about food and culture</p>
+    </div>
+    <div class="faq-list">
+        <div class="faq-item">
+            <h3>1. Why is food important in cultural traditions?</h3>
+            <p>Food plays a central role in cultural traditions by bringing people together, celebrating heritage, and expressing identity through unique flavors and rituals.</p>
+        </div>
+        <div class="faq-item">
+            <h3>2. How do different cultures influence each other's cuisines?</h3>
+            <p>Through migration, trade, and globalization, cultures share ingredients and cooking techniques, leading to fusion dishes and new culinary experiences.</p>
+        </div>
+        <div class="faq-item">
+            <h3>3. What are some common food-related customs around the world?</h3>
+            <p>Examples include tea ceremonies in Japan, communal eating in Ethiopia, and festive holiday meals in many countries.</p>
+        </div>
+        <div class="faq-item">
+            <h3>4. How can I respectfully try foods from other cultures?</h3>
+            <p>Be open-minded, learn about the food’s background, follow local etiquette, and show appreciation for the culture’s traditions.</p>
+        </div>
+        <div class="faq-item">
+            <h3>5. Why do some cultures avoid certain foods?</h3>
+            <p>Religious beliefs, health reasons, and historical practices often shape dietary restrictions and preferences in different cultures.</p>
+        </div>
+    </div>
+</section>
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="section-title">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Reach out with your questions or feedback.</p>
+    </div>
+    <div class="contact-container">
+        <div class="contact-details">
+            <h3>Contact Information</h3>
+            <p><strong>Email:</strong> info@globalflavors.com</p>
+            <p><strong>Phone:</strong> +1 234 567 8901</p>
+            <p><strong>Address:</strong> 123 Culinary Ave, Food City, World</p>
+        </div>
+        <form class="contact-form" action="mailto:info@globalflavors.com" method="POST" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</section>
     <!-- Footer -->
     <footer class="footer" id="about">
         <div class="footer-container">
